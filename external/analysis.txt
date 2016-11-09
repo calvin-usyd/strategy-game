@@ -1,0 +1,35 @@
+Scenario
+1. Everyone doesn't have to submit at round 1
+2. round2->submit->logout->login->next round
+	(currently: round2->logout->login->submit->next round)
+	
+Go to next round condition:
+----------------------------
+1. total Active  == total submitted 
+	(should be: total submitted > total Active)
+	
+Quit condition
+--------------
+
+
+Active condition
+----------------
+action not submitted
+logged in
+
+
+1. Everyone doesn't have to submit at round 1
+2. round2->submit->logout->login->next round
+	(currently: round2->logout->login->submit->next round)
+
+The logic of going to next round need to be polished.
+
+1. set initial session
+- roundNo = 0
+- cash = default
+- share = default 
+- pricePerShare = default
+2. save game_user
+3. check all players joined (numOfPlayer = totalPlayerAtRound0)
+4. setRoundNo = 1
+5. 
